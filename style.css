@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: white;
+}
+
+/* Glass container */
+.container {
+    width: 85%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    animation: fadeIn 1s ease;
+}
+
+h1 {
+    text-align: center;
+    color: #38bdf8;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Form */
+.form-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-section input {
+    padding: 12px;
+    margin: 8px;
+    width: 180px;
+    background: #0f172a;
+    border: 1px solid #334155;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.form-section input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 10px #38bdf8;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    margin: 8px;
+    border: none;
+    background: linear-gradient(45deg, #38bdf8, #0ea5e9);
+    color: black;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #38bdf8;
+}
+
+.delete-btn {
+    background: linear-gradient(45deg, #ef4444, #dc2626);
+    color: white;
+}
+
+/* Search */
+.search-box {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: white;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+th {
+    background: #334155;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+}
+
+tr {
+    transition: 0.3s;
+}
+
+tr:hover {
+    background: rgba(56,189,248,0.1);
+    transform: scale(1.01);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 25px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
